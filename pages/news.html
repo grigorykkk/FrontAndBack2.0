@@ -4,50 +4,47 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Новости</title>
+    <link rel="stylesheet" href="../style/styles.css">
 </head>
 <body>
-<!-- Хэдер -->
-<header id="header">
-    <h1>Сайт учебного проекта</h1>
-</header>
+<div class="page-container">
+    <header class="header">
+        Новости
+    </header>
 
-<!-- Меню навигации -->
-<nav id="menu">
-    <ul>
-        <li><a href="../index.html">Главная</a></li>
-        <li><a href="news.html">Новости</a></li>
-        <li><a href="practices.html">Практики</a></li>
-        <li><a href="goods.html">Товары</a></li>
-        <li><a href="contacts.html">Контакты</a></li>
-    </ul>
-</nav>
+    <nav class="nav">
+        <ul class="nav-list">
+            <li class="nav-item"><a class="nav-link" href="../index.html">Главная</a></li>
+            <li class="nav-item"><a class="nav-link" href="news.html">Новости</a></li>
+            <li class="nav-item"><a class="nav-link" href="practices.html">Практики</a></li>
+            <li class="nav-item"><a class="nav-link" href="goods.html">Товары</a></li>
+            <li class="nav-item"><a class="nav-link" href="contacts.html">Контакты</a></li>
+        </ul>
+    </nav>
 
-<!-- Основной блок новостей -->
-<main id="content">
-    <h2>Новости</h2>
+    <main class="content">
+        <section class="experience-card">
+            <h2 class="experience-title">Последние новости</h2>
+            <article class="experience">
+                <h3 class="experience-title">Открытие нового раздела сайта</h3>
+                <p class="experience-desc">29 сентября 2025</p>
+                <p class="experience-desc">
+                    Запущен новый раздел сайта, добавлены стили и обновлено меню для удобства пользователей.
+                </p>
+            </article>
+            <article class="experience-section">
+                <h3 class="experience-title">Практическое занятие 8</h3>
+                <p class="experience-desc">22 сентября 2025</p>
+                <p class="experience-desc">
+                    На сайте опубликованы материалы по основам CSS для самостоятельного изучения.
+                </p>
+            </article>
+        </section>
+    </main>
 
-    <section class="news-block">
-        <h3>Запуск нового курса по фронтенду</h3>
-        <p><strong>Дата:</strong> 25 сентября 2025, <strong>Автор:</strong> Админ</p>
-        <p>Открыт новый учебный курс по современному фронтенду! В программе изучение HTML, CSS, JavaScript и основ фреймворков React и Vue.</p>
-    </section>
-
-    <section class="news-block">
-        <h3>Обновление расписания практик</h3>
-        <p><strong>Дата:</strong> 20 сентября 2025, <strong>Автор:</strong> Преподаватель</p>
-        <p>В расписание были внесены изменения. Теперь практические занятия проводятся по понедельникам и четвергам. Следите за новостями!</p>
-    </section>
-
-    <section class="news-block">
-        <h3>Добавлены материалы по бэкенду</h3>
-        <p><strong>Дата:</strong> 16 сентября 2025, <strong>Автор:</strong> Модератор</p>
-        <p>В раздел «Практики» загружены полезные материалы по основам серверной разработки, включая примеры кода и рекомендации.</p>
-    </section>
-</main>
-
-<!-- Футер -->
-<footer id="footer">
-    <p>© 2025 Сайт учебного проекта</p>
-</footer>
+    <footer class="footer">
+        Футер
+    </footer>
+</div>
 </body>
 </html>
