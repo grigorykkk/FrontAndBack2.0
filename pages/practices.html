@@ -2,44 +2,78 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <title>Практики</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Практики - Портфолио</title>
     <link rel="stylesheet" href="../style/styles.css">
 </head>
 <body>
-<div class="page-container">
+<!-- Основной контейнер -->
+<div class="page">
+
+    <!-- Шапка -->
     <header class="header">
-        <h1>Практические занятия семестра</h1>
+        <h1 class="header__title">Практики</h1>
     </header>
-    <div class="nav">
-        <ul class="nav-list">
-            <li class="nav-item"><a class="nav-link" href="../index.html">Главная</a></li>
-            <li class="nav-item"><a class="nav-link" href="news.html">Новости</a></li>
-            <li class="nav-item"><a class="nav-link" href="practices.html">Практики</a></li>
-            <li class="nav-item"><a class="nav-link" href="goods.html">Товары</a></li>
-            <li class="nav-item"><a class="nav-link" href="contacts.html">Контакты</a></li>
+
+    <!-- Навигация -->
+    <nav class="nav">
+        <ul class="nav__list">
+            <li class="nav__item">
+                <a class="nav__link" href="../index.html">Главная</a>
+            </li>
+            <li class="nav__item">
+                <a class="nav__link" href="news.html">Новости</a>
+            </li>
+            <li class="nav__item nav__item--active">
+                <a class="nav__link" href="practices.html">Практики</a>
+            </li>
+            <li class="nav__item">
+                <a class="nav__link" href="goods.html">Товары</a>
+            </li>
+            <li class="nav__item">
+                <a class="nav__link" href="contacts.html">Контакты</a>
+            </li>
         </ul>
-    </div>
-    <main id="content">
-        <h2>Список практических работ</h2>
-        <ol>
-            <li>Практика 1: Верстка базовой страницы (index.html)</li>
-            <li>Практика 2: Создание страницы новостей (news.html)</li>
-            <li>Практика 3: Создание каталога товаров (goods.html)</li>
-            <li>Практика 4: Создание страницы контактов (contacts.html)</li>
-            <li>Практика 5: Использование Git и GitHub</li>
-            <li>Практика 6: Публикация на GitHub Pages</li>
-            <li>Практика 7: Основы HTML</li>
-        </ol>
-        <h3>Пояснения</h3>
-        <p>
-            Здесь представлен перечень практических работ. Для выполнения используй материалы основного репозитория и
-            лекций.<br>
-            По завершении каждого этапа добавляй краткую информацию или ссылку на выполненную работу.
-        </p>
+    </nav>
+
+    <!-- Основной контент -->
+    <main class="main">
+
+        <!-- Практические работы -->
+        <section class="practices">
+            <h2 class="practices__title">Практические работы семестра</h2>
+            <div class="practices__content">
+                <ol class="practices__list">
+                    <li class="practices__item">Практика 1: Верстка базовой страницы (index.html)</li>
+                    <li class="practices__item">Практика 2: Создание страницы новостей (news.html)</li>
+                    <li class="practices__item">Практика 3: Создание каталога товаров (goods.html)</li>
+                    <li class="practices__item">Практика 4: Создание страницы контактов (contacts.html)</li>
+                    <li class="practices__item">Практика 5: Использование Git и GitHub</li>
+                    <li class="practices__item">Практика 6: Публикация на GitHub Pages</li>
+                    <li class="practices__item">Практика 7: Основы HTML</li>
+                    <li class="practices__item">Практика 8: Основы CSS</li>
+                </ol>
+            </div>
+        </section>
+
+        <!-- Пояснения -->
+        <section class="instructions">
+            <h2 class="instructions__title">Пояснения</h2>
+            <div class="instructions__content">
+                <p class="instructions__text">
+                    Здесь представлен перечень практических работ. Для выполнения используй материалы основного репозитория и лекций.
+                </p>
+                <p class="instructions__text">
+                    По завершении каждого этапа добавляй краткую информацию или ссылку на выполненную работу.
+                </p>
+            </div>
+        </section>
+
     </main>
-    <footer id="footer">
-        <p>Фронтенд и бэкенд разработка, 2025/2026</p>
+
+    <!-- Подвал -->
+    <footer class="footer">
+        <p class="footer__text">&copy; 2024 Мой сайт</p>
     </footer>
 </div>
 </body>
