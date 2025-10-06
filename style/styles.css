@@ -1,13 +1,13 @@
 /* CSS переменные */
 :root {
-    --color-main: #2c3e50;
-    --color-accent: #3498db;
-    --color-light: #ecf0f1;
-    --color-dark: #34495e;
-    --color-text: #2c3e50;
+    --color-main: #000000;
+    --color-accent: #FFD700;
+    --color-light: #FFFACD;
+    --color-dark: #1a1a1a;
+    --color-text: #000000;
     --color-white: #ffffff;
 
-    --shadow: 0 2px 5px rgba(0,0,0,0.1);
+    --shadow: 0 2px 5px rgba(0,0,0,0.3);
     --radius: 8px;
 
     --space-sm: 10px;
@@ -170,16 +170,21 @@ body {
 }
 
 .skill--html {
-    background: #e34c26;
+    background: #000000;
+    color: #FFD700;
+    border: 2px solid #FFD700;
 }
 
 .skill--css {
-    background: #264de4;
+    background: #FFD700;
+    color: #000000;
+    border: 2px solid #000000;
 }
 
 .skill--js {
-    background: #f0db4f;
-    color: var(--color-text);
+    background: #1a1a1a;
+    color: #FFD700;
+    border: 2px solid #FFD700;
 }
 
 /* Блок projects */
@@ -215,7 +220,7 @@ body {
 }
 
 .project-card__desc {
-    color: #666;
+    color: #333333;
 }
 
 /* Блок footer */
@@ -398,7 +403,7 @@ body {
 }
 
 .goods-product-desc {
-    color: #666;
+    color: #333333;
     margin-bottom: var(--space-md);
     line-height: 1.5;
     font-style: italic;
@@ -484,7 +489,7 @@ body {
 
 .practices__item:hover {
     transform: translateX(5px);
-    background: #e8f4f8;
+    background: #FFF8DC;
 }
 
 /* Блок instructions */
