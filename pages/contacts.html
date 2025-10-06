@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Контакты</title>
+    <title>Контакты - Портфолио</title>
     <link rel="stylesheet" href="../style/styles.css">
     <style>
         dialog::backdrop {
@@ -150,56 +150,75 @@
     </style>
 </head>
 <body>
-<div class="page-container">
+<!-- Основной контейнер -->
+<div class="page">
+
+    <!-- Шапка -->
     <header class="header">
-        <h1>Контакты</h1>
+        <h1 class="header__title">Контакты</h1>
     </header>
 
+    <!-- Навигация -->
     <nav class="nav">
-        <ul class="nav-list">
-            <li class="nav-item"><a class="nav-link" href="../index.html">Главная</a></li>
-            <li class="nav-item"><a class="nav-link" href="news.html">Новости</a></li>
-            <li class="nav-item"><a class="nav-link" href="practices.html">Практики</a></li>
-            <li class="nav-item"><a class="nav-link" href="goods.html">Товары</a></li>
-            <li class="nav-item"><a class="nav-link" href="contacts.html">Контакты</a></li>
+        <ul class="nav__list">
+            <li class="nav__item">
+                <a class="nav__link" href="../index.html">Главная</a>
+            </li>
+            <li class="nav__item">
+                <a class="nav__link" href="news.html">Новости</a>
+            </li>
+            <li class="nav__item">
+                <a class="nav__link" href="practices.html">Практики</a>
+            </li>
+            <li class="nav__item">
+                <a class="nav__link" href="goods.html">Товары</a>
+            </li>
+            <li class="nav__item nav__item--active">
+                <a class="nav__link" href="contacts.html">Контакты</a>
+            </li>
         </ul>
     </nav>
 
-    <main class="content">
-        <section class="contacts-container">
-            <h2 class="section-title">Наши контакты</h2>
+    <!-- Основной контент -->
+    <main class="main">
+        <!-- Контактная информация -->
+        <section class="contacts">
+            <h2 class="contacts__title">Наши контакты</h2>
 
-            <article class="contact-info">
-                <h3>Электронная почта</h3>
-                <p>Адрес электронной почты: astafev@mirea.ru</p>
-            </article>
+            <div class="contacts__content">
+                <div class="contact-info">
+                    <h3 class="contact-info__title">Электронная почта</h3>
+                    <p class="contact-info__text">astafev@mirea.ru</p>
+                </div>
 
-            <article class="contact-info">
-                <h3>Физический адрес</h3>
-                <p>Адрес: г. Москва, ул. Пушкина, д. Колотушкина</p>
-            </article>
+                <div class="contact-info">
+                    <h3 class="contact-info__title">Физический адрес</h3>
+                    <p class="contact-info__text">г. Москва, ул. Пушкина, д. Колотушкина</p>
+                </div>
 
-            <div class="contact-grid">
-                <article class="contact-item"> <!-- Было: <div class="contact-item"> -->
-                    <h3>Телефон</h3>
-                    <p>+7 (495) 123-45-67</p>
-                </article>
-                <article class="contact-item">
-                    <h3>Время работы</h3>
-                    <p>Пн-Пт: 9:00-18:00</p>
-                </article>
-                <article class="contact-item">
-                    <h3>Социальные сети</h3>
-                    <p>VK, Telegram, WhatsApp</p>
-                </article>
+                <div class="contacts__grid">
+                    <div class="contact-card">
+                        <h3 class="contact-card__title">Телефон</h3>
+                        <p class="contact-card__text">+7 (495) 123-45-67</p>
+                    </div>
+                    <div class="contact-card">
+                        <h3 class="contact-card__title">Время работы</h3>
+                        <p class="contact-card__text">Пн-Пт: 9:00-18:00</p>
+                    </div>
+                    <div class="contact-card">
+                        <h3 class="contact-card__title">Социальные сети</h3>
+                        <p class="contact-card__text">VK, Telegram, WhatsApp</p>
+                    </div>
+                </div>
+
+                <button class="contacts__button" onclick="contactModal.showModal()">Связаться с нами</button>
             </div>
-
-            <button class="contact-button" onclick="contactModal.showModal()">Связаться с нами</button>
         </section>
     </main>
 
+    <!-- Подвал -->
     <footer class="footer">
-        <p>© 2024 Все права защищены. Контактная информация</p>
+        <p class="footer__text">&copy; 2024 Мой сайт</p>
     </footer>
 
     <dialog id="contactModal">

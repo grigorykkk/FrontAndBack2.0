@@ -3,47 +3,75 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Новости</title>
+    <title>Новости - Портфолио</title>
     <link rel="stylesheet" href="../style/styles.css">
 </head>
 <body>
-<div class="page-container">
+<!-- Основной контейнер -->
+<div class="page">
+
+    <!-- Шапка -->
     <header class="header">
-        <h1>Новости</h1> <!-- Добавили заголовок для семантики -->
+        <h1 class="header__title">Новости</h1>
     </header>
 
+    <!-- Навигация -->
     <nav class="nav">
-        <ul class="nav-list">
-            <li class="nav-item"><a class="nav-link" href="../index.html">Главная</a></li>
-            <li class="nav-item"><a class="nav-link" href="news.html">Новости</a></li>
-            <li class="nav-item"><a class="nav-link" href="practices.html">Практики</a></li>
-            <li class="nav-item"><a class="nav-link" href="goods.html">Товары</a></li>
-            <li class="nav-item"><a class="nav-link" href="contacts.html">Контакты</a></li>
+        <ul class="nav__list">
+            <li class="nav__item">
+                <a class="nav__link" href="../index.html">Главная</a>
+            </li>
+            <li class="nav__item nav__item--active">
+                <a class="nav__link" href="news.html">Новости</a>
+            </li>
+            <li class="nav__item">
+                <a class="nav__link" href="practices.html">Практики</a>
+            </li>
+            <li class="nav__item">
+                <a class="nav__link" href="goods.html">Товары</a>
+            </li>
+            <li class="nav__item">
+                <a class="nav__link" href="contacts.html">Контакты</a>
+            </li>
         </ul>
     </nav>
 
-    <main class="content">
-        <section class="news-section"> <!-- Было: experience-card -->
-            <h2 class="section-title">Последние новости</h2> <!-- Было: experience-title -->
-            <article class="news-item"> <!-- Было: experience -->
-                <h3 class="news-title">Открытие нового раздела сайта</h3> <!-- Было: experience-title -->
-                <time class="news-date">29 сентября 2025</time> <!-- Было: p class="experience-desc" -->
-                <p class="news-content"> <!-- Было: experience-desc -->
-                    Запущен новый раздел сайта, добавлены стили и обновлено меню для удобства пользователей.
-                </p>
-            </article>
-            <article class="news-item"> <!-- Было: experience-section -->
-                <h3 class="news-title">Практическое занятие 8</h3> <!-- Было: experience-title -->
-                <time class="news-date">22 сентября 2025</time> <!-- Было: p class="experience-desc" -->
-                <p class="news-content"> <!-- Было: experience-desc -->
-                    На сайте опубликованы материалы по основам CSS для самостоятельного изучения.
-                </p>
-            </article>
+    <!-- Основной контент -->
+    <main class="main">
+        
+        <!-- Новости -->
+        <section class="news">
+            <h2 class="news__title">Последние новости</h2>
+            <div class="news__list">
+                <article class="news-card">
+                    <h3 class="news-card__title">Открытие нового раздела сайта</h3>
+                    <time class="news-card__date">29 сентября 2024</time>
+                    <p class="news-card__content">
+                        Запущен новый раздел сайта, добавлены стили и обновлено меню для удобства пользователей.
+                    </p>
+                </article>
+                <article class="news-card">
+                    <h3 class="news-card__title">Практическое занятие 8</h3>
+                    <time class="news-card__date">22 сентября 2024</time>
+                    <p class="news-card__content">
+                        На сайте опубликованы материалы по основам CSS для самостоятельного изучения.
+                    </p>
+                </article>
+                <article class="news-card">
+                    <h3 class="news-card__title">Новый дизайн портфолио</h3>
+                    <time class="news-card__date">15 сентября 2024</time>
+                    <p class="news-card__content">
+                        Обновлён дизайн сайта-портфолио с использованием современных CSS-технологий.
+                    </p>
+                </article>
+            </div>
         </section>
+
     </main>
 
+    <!-- Подвал -->
     <footer class="footer">
-        <p>Футер</p> <!-- Добавили параграф для семантики -->
+        <p class="footer__text">&copy; 2024 Мой сайт</p>
     </footer>
 </div>
 </body>
