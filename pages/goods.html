@@ -9,7 +9,7 @@
 <body>
 <div class="page-container">
     <header class="header">
-        Товары
+        <h1>Товары</h1> <!-- Добавили заголовок для семантики -->
     </header>
     <nav class="nav">
         <ul class="nav-list">
@@ -21,27 +21,29 @@
         </ul>
     </nav>
     <main class="content">
-        <h1>Наши товары</h1>
-        <div class="experience-section">
-            <div class="experience-card">
-                <img src="../images/IMG_3763.png" alt="Товар 1" class="profile-photo">
-                <h2 class="experience-title">Mercedes Maybach</h2>
-                <p class="experience-desc"> 20 000 000 rub</p>
+        <section class="products-section"> <!-- Добавили семантический тег section -->
+            <h1 class="section-title">Наши товары</h1> <!-- Добавили class -->
+            <div class="products-grid"> <!-- Было: experience-section -->
+                <article class="product-card"> <!-- Было: <div class="experience-card"> -->
+                    <img src="../images/IMG_3763.png" alt="Товар 1" class="product-image"> <!-- Было: profile-photo -->
+                    <h2 class="product-title">Mercedes Maybach</h2> <!-- Было: experience-title -->
+                    <p class="product-price">20 000 000 rub</p> <!-- Было: experience-desc -->
+                </article>
+                <article class="product-card">
+                    <img src="../images/IMG_4230.png" alt="Товар 2" class="product-image">
+                    <h2 class="product-title">Mercedes-Benz Mclaren SLR</h2>
+                    <p class="product-price">30 000 000 rub</p> <!-- Исправили класс с experience-title на product-price -->
+                </article>
+                <article class="product-card">
+                    <img src="../images/IMG_4233.png" alt="Товар 3" class="product-image">
+                    <h2 class="product-title">Bugatti</h2>
+                    <p class="product-price">2 000 000 000 rub</p>
+                </article>
             </div>
-            <div class="experience-card">
-                <img src="../images/IMG_4230.png" alt="Товар 2" class="profile-photo">
-                <h2 class="experience-title">Mercedes-Benz Mclaren SLR</h2>
-                <p class="experience-title"> 30 000 000 rub </p>
-            </div>
-            <div class="experience-card">
-                <img src="../images/IMG_4233.png" alt="Товар 3" class="profile-photo">
-                <h2 class="experience-title">Bugatti</h2>
-                <p class="experience-desc"> 2 000 000 000 rub </p>
-            </div>
-        </div>
+        </section>
     </main>
     <footer class="footer">
-        &copy; 2025 Магазин товаров | Все права защищены
+        <p>&copy; 2025 Магазин товаров | Все права защищены</p> <!-- Добавили параграф для семантики -->
     </footer>
 </div>
 </body>

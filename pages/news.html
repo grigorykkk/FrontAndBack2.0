@@ -9,7 +9,7 @@
 <body>
 <div class="page-container">
     <header class="header">
-        Новости
+        <h1>Новости</h1> <!-- Добавили заголовок для семантики -->
     </header>
 
     <nav class="nav">
@@ -23,19 +23,19 @@
     </nav>
 
     <main class="content">
-        <section class="experience-card">
-            <h2 class="experience-title">Последние новости</h2>
-            <article class="experience">
-                <h3 class="experience-title">Открытие нового раздела сайта</h3>
-                <p class="experience-desc">29 сентября 2025</p>
-                <p class="experience-desc">
+        <section class="news-section"> <!-- Было: experience-card -->
+            <h2 class="section-title">Последние новости</h2> <!-- Было: experience-title -->
+            <article class="news-item"> <!-- Было: experience -->
+                <h3 class="news-title">Открытие нового раздела сайта</h3> <!-- Было: experience-title -->
+                <time class="news-date">29 сентября 2025</time> <!-- Было: p class="experience-desc" -->
+                <p class="news-content"> <!-- Было: experience-desc -->
                     Запущен новый раздел сайта, добавлены стили и обновлено меню для удобства пользователей.
                 </p>
             </article>
-            <article class="experience-section">
-                <h3 class="experience-title">Практическое занятие 8</h3>
-                <p class="experience-desc">22 сентября 2025</p>
-                <p class="experience-desc">
+            <article class="news-item"> <!-- Было: experience-section -->
+                <h3 class="news-title">Практическое занятие 8</h3> <!-- Было: experience-title -->
+                <time class="news-date">22 сентября 2025</time> <!-- Было: p class="experience-desc" -->
+                <p class="news-content"> <!-- Было: experience-desc -->
                     На сайте опубликованы материалы по основам CSS для самостоятельного изучения.
                 </p>
             </article>
@@ -43,7 +43,7 @@
     </main>
 
     <footer class="footer">
-        Футер
+        <p>Футер</p> <!-- Добавили параграф для семантики -->
     </footer>
 </div>
 </body>
